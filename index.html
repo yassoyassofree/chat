@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title> <!-- Link to Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-color: #000;
+            color: #00ff00;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            font-size: 1.2em;
+            position: relative; /* For absolute positioning of the icon */
+        }
+        .settings-icon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: #00ff00; /* Green color */
+            font-size: 2em; /* Size of the icon */
+            cursor: pointer; /* Pointer cursor on hover */
+            transition: color 0.3s; /* Transition effect for color */
+        }
+        .settings-icon:hover {
+            color: #009900; /* Darker green on hover */
+        }
+    </style>
+    <style>
+        body {
+            background-color: #000;
+            color: #00ff00;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            font-size: 1.2em;
+        }
+        .login-container {
+            width: 300px;
+            margin: 100px auto;
+            padding: 20px;
+            border: 1px solid #00ff00;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        .login-form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .login-form input {
+            width: 100%;
+            height: 40px;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #00ff00;
+            border-radius: 5px;
+            background-color: #1a1a1a;
+            color: #00ff00;
+        }
+        .login-form button {
+            width: 100%;
+            height: 40px;
+            background-color: #00ff00;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .login-form button:hover {
+            background-color: #009900;
+            color: #fff;
+        }
+        .error-message {
+            color: #ff0000;
+            margin-top: 20px;
+        }
+    </style>
+        <style>
+            body {
+                font-family: 'Courier New', Courier, monospace;
+                margin: 0;
+                padding: 0;
+                background-color: #000;
+                color: #00ff00;
+            }
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px;
+                background-color: rgba(0, 0, 0, 0.7);
+                border-bottom: 2px solid #00ff00;
+            }
+            .navbar .logo {
+                font-size: 1.8em;
+                margin: 0;
+                color: #00ff00;
+            }
+            .nav-links {
+                list-style: none;
+                padding: 0;
+                display: flex;
+                gap: 20px; /* Gap between menu items */
+            }
+            .nav-links li {
+                display: inline;
+            }
+            .nav-links a {
+                color: #00ff00;
+                text-decoration: none;
+                padding: 5px 10px;
+                border-radius: 5px;
+                transition: background-color 0.3s, color 0.3s;
+            }
+            .nav-links a:hover {
+                background-color: #00ff00;
+                color: #000;
+            }
+            .chat-container {
+                display: flex;
+            }
+            .sidebar {
+                width: 200px;
+                background-color: rgba(0, 0, 0, 0.8);
+                padding: 20px;
+                border-right: 2px solid #00ff00;
+                box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+            }
+            .chat-area {
+                flex-grow: 1;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                background-color: rgba(0, 0, 0, 0.8);
+                box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+            }
+            .messages {
+                flex-grow: 1;
+                overflow-y: auto;
+                margin-bottom: 10px;
+                padding: 10px;
+                background-color: #1a1a1a;
+                border: 1px solid #00ff00;
+                border-radius: 5px;
+            }
+            .input-area {
+                display: flex;
+            }
+            .input-area input {
+                flex-grow: 1;
+                padding: 10px;
+                border: 1px solid #00ff00;
+                border-radius: 5px;
+                background-color: #1a1a1a;
+                color: #00ff00;
+            }
+            .input-area button {
+                margin-left: 10px;
+                padding: 10px;
+                background-color: #00ff00;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                color: #000;
+            }
+            .input-area button:hover {
+                background-color: #009900;
+                color: #fff;
+            }
+            .user-list {
+                width: 200px;
+                background-color: rgba(0, 0, 0, 0.8);
+                padding: 20px;
+                border-left: 2px solid #00ff00;
+                box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+            }
+        </style>
+    <body>
+        
+        <div class="login-container">
+            <h2>Login to the Matrix</h2>
+            <form class="login-form" onsubmit="return validateForm()">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+    
+                <button type="submit">Access</button>
+                <div class="error-message" id="error-message"></div>
+            </form>
+            <p>Don't have an account? <a href="regester.html" style="color: #00ff00;">Register here</a></p>
+            
+        </div>
+    
+        <script>
+            function validateForm(event) {
+                const username = document.getElementById('username').value;
+                const password = document.getElementById('password').value;
+                const errorMessage = document.getElementById('error-message');
+    
+                if (username === "" || password === "") {
+                    errorMessage.textContent = "Please enter both username and password.";
+                    return false;
+                }
+    
+                // Retrieve saved username and password from LocalStorage
+                const savedUsername = localStorage.getItem('username');
+                const savedPassword = localStorage.getItem('password');
+    
+                if (username === savedUsername && password === savedPassword) {
+                    // Redirect to welcome page if credentials are correct
+                    window.location.href = "pin.html";
+                    return false; // Prevent default form submission
+                } else {
+                    errorMessage.textContent = "Incorrect username or password. Please try again.";
+                    return false; // Prevent default form submission
+                }
+    
+                event.preventDefault(); // Prevent default form submission
+    
+                return true;
+            }
+        </script>
+    <!-- Code injected by live-server -->
+    <script>
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function () {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        }
+        else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+        // ]]>
+    </script>
+
+
+    
+    </body>
+
+</html>
